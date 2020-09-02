@@ -3,6 +3,7 @@ package com.example.bmicalculator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     EditText height, weight;
     TextView result;
     Button btn;
+    public static final String TAG = "Result.....";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
             bmilabel = "BMI"+"="+r + "\n" + bmilabel;
 
             result.setText(bmilabel);
+            Log.v(TAG,"Result"+result);
         }
     }
 
