@@ -1,3 +1,4 @@
+include ':androidtv'
 include ':app:wearos'
 rootProject.name='BMI Calculator'
 include ':app'
